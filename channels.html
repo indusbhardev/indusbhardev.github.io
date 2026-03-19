@@ -1,172 +1,56 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Only Cricket</title>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+    <title>Sports Streaming</title>
     <link rel="stylesheet" href="https://indusbhardev.github.io/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="dark">
-  <nav>
-    <div class="logo"><a href="#">Sports</a></div>
-    
-    <!-- Right Icons -->
-    <div class="nav-actions">
-      <div class="search-container" id="searchContainer">
-        <input type="text" id="searchInput" placeholder="Search channels...">
-        <i class="uil uil-search search-icon" id="searchIcon"></i>
-      </div>
+<body class="bg-gray-100 dark:bg-[#0f111a] text-black dark:text-white min-h-screen transition-colors duration-300">
 
-      <div class="dark-light" id="modeToggle"><i class="bx bx-moon" id="modeIcon"></i></div>
-    </div>
-  </nav>
+    <nav class="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-[#0f111a] sticky top-0 z-50">
+        <h1 class="text-2xl font-bold text-sky-500">Sports</h1>
+        
+        <div class="flex items-center gap-4">
+            <input type="text" id="searchInput" placeholder="Search..." 
+                   class="bg-gray-200 dark:bg-gray-800 rounded-full px-4 py-1.5 w-40 md:w-64 focus:outline-none focus:ring-2 focus:ring-sky-500">
+            
+            <button id="themeToggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-800 hover:opacity-80">
+                <span id="themeIcon">🌙</span>
+            </button>
+        </div>
+    </nav>
 
-  <i class="uil uil-angle-up up" id="scrollToTopBtn" style="display: block;"></i>
+    <main class="p-6 space-y-12">
+        <section>
+            <div class="flex items-center gap-2 mb-4">
+                <h2 class="text-xl font-bold">Sports 🏀</h2>
+            </div>
+            <div id="sportsGrid" class="flex gap-6 overflow-x-auto pb-6 no-scrollbar">
+                </div>
+        </section>
 
-  <!-- Embedded cricket live stream -->
-  <iframe src="https://bwidget.crictimes.org/" scrolling="no"></iframe>
+        <section>
+            <div class="flex items-center gap-2 mb-4">
+                <h2 class="text-xl font-bold">More 🏀</h2>
+            </div>
+            <div id="moreGrid" class="flex gap-6 overflow-x-auto pb-6 no-scrollbar">
+                </div>
+        </section>
+    </main>
 
-  <!-- Live Cricket Section -->
-  <div class="section-title"><span>Live Cricket</span></div>
-  <div class="scroll-section" id="liveCricketSection">
-    <a href="20">
-      <div class="card live-card" data-title="t20">
-        <img src="https://indiantelevision.com/wp-content/uploads/2026/03/IPL-1000x600.jpg" alt=" Cricket">
-        <span>IPL Soon...</span>
-        <div class="live-tag">Live</div>
-        <div class="channel">IPL</div>
-      </div>
-    </a>
-    <a href="https://indusbhar.blogspot.com/?url=https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/b17adfe543354fdd8d189b110617cddd/index.m3u8?name=undefined&keyId=undefined&key=undefined&cookie=undefined">
-      <div class="card live-card" data-title="DD Sports">
-        <img src="https://jiotvimages.cdn.jio.com/dare_images/images/channel/7fbf0410e7b133f9bf8e6468dfe3996e.png" alt="ddsports">
-        <span>DD Sports</span>
-        <div class="live-tag">Live</div>
-        <div class="channel">DD</div>
-      </div>
-    </a>
-  </div>
-
-  <!-- Sports Section -->
-  <div class="section-title"><span>Sports</span></div>
-  <div class="scroll-section" id="sportsSection">
-    <a href="live/star/telugu">
-      <div class="card" data-title="Telugu">
-        <img src="https://i.postimg.cc/qBFDFvYH/Telugu-HD.png" alt="Telugu">
-        <span>Telugu</span>
-      </div>
-    </a>
-    <a href="live/star/tamil">
-      <div class="card" data-title="Tamil">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEXuHOJzhgV5_PuQ-GxDVU2q3YF5O0pv9dRlLwh6liXRStI3gThJ1_1A83tdNKuEdfi88&amp;usqp=CAU" alt="Tamil">
-        <span>Tamil</span>
-      </div>
-    </a>
-    <a href="live/star/hindi">
-      <div class="card" data-title="Hindi">
-        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_hcdl/sources/r1/cms/prod/7433/567433-h" alt="Hindi">
-        <span>Hindi</span>
-      </div>
-    </a>
-    <a href="live/star/english">
-      <div class="card" data-title="English">
-        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_hcdl/sources/r1/cms/prod/7430/567430-h" alt="English">
-        <span>English</span>
-      </div>
-    </a>
-  </div>
-
-  <!-- More Channels Section -->
-  <div class="section-title"><span>More</span></div>
-  <div class="scroll-section" id="moreSection">
-    <a href="https://live.drmlive.in/jiotv/play.php?id=162&amp;e=">
-      <div class="card" data-title="Sony 1">
-        <img src="https://assets.airtel.in/static-assets/cms/dth/images/logo-adapt-pages/SONY%20SPORTS%20TEN%201.jpg" alt="Sony 1">
-        <span>Sony 1</span>
-      </div>
-    </a>
-    <a href="https://live.drmlive.in/jiotv/play.php?id=891&amp;e=">
-      <div class="card" data-title="Sony 2">
-        <img src="https://assets.airtel.in/static-assets/cms/dth/images/logo-adapt-pages/SONY%20SPORTS%20TEN%202.jpg" alt="Sony 2">
-        <span>Sony 2</span>
-      </div>
-    </a>
-    <a href="https://live.drmlive.in/jiotv/play.php?id=524&amp;e=">
-      <div class="card" data-title="Sony 3">
-        <img src="https://assets.airtel.in/static-assets/cms/dth/images/logo-adapt-pages/SONY%20SPORTS%20TEN%203.jpg" alt="Sony 3">
-        <span>Sony 3</span>
-      </div>
-    </a>
-  </div>
-
-  <script>
-    // Dark/Light toggle
-    const modeToggle = document.getElementById("modeToggle");
-    const modeIcon = document.getElementById("modeIcon");
-    const body = document.body;
-
-    // Check local storage
-    const savedMode = localStorage.getItem("mode");
-    if (savedMode === "light-mode") {
-      body.classList.remove("dark");
-      body.classList.add("light");
-      modeIcon.classList.replace("bx-moon", "bx-sun");
-    }
-
-    modeToggle.addEventListener("click", () => {
-      body.classList.toggle("dark");
-      body.classList.toggle("light");
-
-      if (body.classList.contains("light")) {
-        modeIcon.classList.replace("bx-moon", "bx-sun");
-        localStorage.setItem("mode", "light-mode");
-      } else {
-        modeIcon.classList.replace("bx-sun", "bx-moon");
-        localStorage.setItem("mode", "dark-mode");
-      }
-    });
-
-    // Scroll to top button
-    const upBtn = document.getElementById("scrollToTopBtn");
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) upBtn.style.display = "block";
-      else upBtn.style.display = "none";
-    });
-    upBtn.addEventListener("click", () => window.scrollTo({top:0, behavior:'smooth'}));
-
-    // Search toggle
-    const searchContainer = document.getElementById('searchContainer');
-    const searchIcon = document.getElementById('searchIcon');
-    const searchInput = document.getElementById('searchInput');
-
-    searchIcon.addEventListener('click', () => {
-      searchContainer.classList.toggle('active');
-      if (searchContainer.classList.contains("active")) {
-        searchIcon.classList.replace("uil-search", "uil-times");
-        searchInput.focus();
-      } else {
-        searchIcon.classList.replace("uil-times", "uil-search");
-        searchInput.value = ""; 
-        document.querySelectorAll(".card").forEach(card => {
-          card.parentElement.style.display = "inline-block";
-        });
-      }
-    });
-
-    // Search functionality
-    searchInput.addEventListener('input', function() {
-      const filter = this.value.toLowerCase();
-      document.querySelectorAll('.scroll-section .card').forEach(card => {
-        const title = card.getAttribute('data-title').toLowerCase();
-        card.parentElement.style.display = title.includes(filter) ? 'inline-block' : 'none';
-      });
-    });
-  </script>
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" 
+            class="fixed bottom-6 right-6 bg-sky-500 p-3 rounded-full shadow-lg text-white">
+        ↑
+    </button>
 
 
-<script src="https://indusbhardev.github.io/script.js"></script>
+
+
+
+
+
+    <script src="https://indusbhardev.github.io/script.js"></script>
 </body>
 </html>
