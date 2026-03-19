@@ -1,3 +1,12 @@
+body {
+    background: radial-gradient(circle at top left, var(--gradient-start), var(--gradient-end));
+    background-attachment: fixed;
+    color: var(--text-main);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    transition: background 0.3s, color 0.3s;
+    min-height: 100vh;
+}
 .section-title {
     padding: 25px 20px 10px;
     font-size: 22px;
