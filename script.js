@@ -22,7 +22,7 @@ const channels = [
         category: "sports",
         display: "HINDI 1",
         // A slightly different logo or same generic Star logo
-        logoUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Star_Sports_logo.svg/2560px-Star_Sports_logo.svg.png" 
+        logoUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGq-NU_4rFvyce9BQJN0Nf9JVNw3kWd9VccA&s" 
     },
     { 
         id: "sony_1", 
