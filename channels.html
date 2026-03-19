@@ -8,8 +8,68 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <button>Click</button>
 
+    <nav>
+    <div class="logo"><a href="#">Sports</a></div>
+    
+    <!-- Right Icons -->
+    <div class="nav-actions">
+      <div class="search-container" id="searchContainer">
+        <input type="text" id="searchInput" placeholder="Search channels...">
+        <i class="uil uil-search search-icon" id="searchIcon"></i>
+      </div>
+
+      <div class="dark-light" id="modeToggle"><i class="bx bx-moon" id="modeIcon"></i></div>
+    </div>
+  </nav>
+
+  <div class="section-title"><span>Live Cricket</span></div>
+  <div class="scroll-section" id="liveCricketSection">
+    <a href="20">
+      <div class="card live-card" data-title="t20">
+        <img src="https://indiantelevision.com/wp-content/uploads/2026/03/IPL-1000x600.jpg" alt=" Cricket">
+        <span>IPL Soon...</span>
+        <div class="live-tag">Live</div>
+        <div class="channel">IPL</div>
+      </div>
+    </a>
+    <a href="fc/index">
+      <div class="card live-card" data-title="FanCode">
+        <img src="https://technosports.co.in/wp-content/uploads/2024/02/23196-fancode-1024x614.webp" alt="FanCode">
+        <span>FanCode</span>
+        <div class="live-tag">Live</div>
+        <div class="channel">FC</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="section-title"><span>Sports</span></div>
+  <div class="scroll-section" id="sportsSection">
+    <a href="live/star/telugu">
+      <div class="card" data-title="Telugu">
+        <img src="https://i.postimg.cc/qBFDFvYH/Telugu-HD.png" alt="Telugu">
+        <span>Telugu</span>
+      </div>
+    </a>
+    <a href="live/star/tamil">
+      <div class="card" data-title="Tamil">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEXuHOJzhgV5_PuQ-GxDVU2q3YF5O0pv9dRlLwh6liXRStI3gThJ1_1A83tdNKuEdfi88&amp;usqp=CAU" alt="Tamil">
+        <span>Tamil</span>
+      </div>
+    </a>
+    <a href="live/star/hindi">
+      <div class="card" data-title="Hindi">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_hcdl/sources/r1/cms/prod/7433/567433-h" alt="Hindi">
+        <span>Hindi</span>
+      </div>
+    </a>
+    <a href="live/star/english">
+      <div class="card" data-title="English">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_hcdl/sources/r1/cms/prod/7430/567430-h" alt="English">
+        <span>English</span>
+      </div>
+    </a>
+  </div>
 
 </body>
 </html>

@@ -1,3 +1,64 @@
-button {
-    padding: 20px;
+.section-title {
+    padding: 25px 20px 10px;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-main);
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+    margin-top: 30px;
+}
+.section-title::after {
+    content: '🏀';
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    animation: arrowMove 1s infinite alternate;
+}
+.scroll-section {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 15px 20px;
+    scroll-behavior: smooth;
+}
+.scroll-section a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    margin: 0 10px;
+}
+.card {
+    width: 200px;
+    height: 220px;
+}
+.live-card img {
+    height: 65%;
+    border-radius: 20px 20px 0 0;
+}
+card span {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-main);
+}
+.live-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--live-color, #ef4444);
+    color: white;
+    padding: 3px 8px;
+    font-size: 0.7rem;
+    border-radius: 6px;
+    font-weight: 700;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    animation: pulse-red 2s infinite;
+    z-index: 2;
 }
