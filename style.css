@@ -301,7 +301,7 @@
     /* ===== IFRAME ===== */
     iframe {
       width: 100%;
-      min-height: 213px;
+      min-height: 190px;
       border: 1px solid var(--card-border);
       margin-top: 80px; /* Space for fixed header */
       border-radius: 20px;
