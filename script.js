@@ -1,4 +1,4 @@
-document.querySelectorAll('a').forEach(link => {
+document.querySelectorAll('#moreSection a').forEach(link => {
   link.addEventListener('click', function(e) {
     // 1. Prevent the browser from opening the original link
     e.preventDefault();
