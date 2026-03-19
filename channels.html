@@ -7,9 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://indusbhardev.github.io/style.css">
 </head>
-<body>
-
-    <nav>
+<body class="dark">
+  <nav>
     <div class="logo"><a href="#">Sports</a></div>
     
     <!-- Right Icons -->
@@ -23,6 +22,12 @@
     </div>
   </nav>
 
+  <i class="uil uil-angle-up up" id="scrollToTopBtn" style="display: block;"></i>
+
+  <!-- Embedded cricket live stream -->
+  <iframe src="https://bwidget.crictimes.org/" scrolling="no"></iframe>
+
+  <!-- Live Cricket Section -->
   <div class="section-title"><span>Live Cricket</span></div>
   <div class="scroll-section" id="liveCricketSection">
     <a href="20">
@@ -43,6 +48,7 @@
     </a>
   </div>
 
+  <!-- Sports Section -->
   <div class="section-title"><span>Sports</span></div>
   <div class="scroll-section" id="sportsSection">
     <a href="live/star/telugu">
@@ -70,6 +76,93 @@
       </div>
     </a>
   </div>
+
+  <!-- More Channels Section -->
+  <div class="section-title"><span>More</span></div>
+  <div class="scroll-section" id="moreSection">
+    <a href="https://live.drmlive.in/jiotv/play.php?id=162&amp;e=">
+      <div class="card" data-title="Sony 1">
+        <img src="https://assets.airtel.in/static-assets/cms/dth/images/logo-adapt-pages/SONY%20SPORTS%20TEN%201.jpg" alt="Sony 1">
+        <span>Sony 1</span>
+      </div>
+    </a>
+    <a href="https://live.drmlive.in/jiotv/play.php?id=891&amp;e=">
+      <div class="card" data-title="Sony 2">
+        <img src="https://assets.airtel.in/static-assets/cms/dth/images/logo-adapt-pages/SONY%20SPORTS%20TEN%202.jpg" alt="Sony 2">
+        <span>Sony 2</span>
+      </div>
+    </a>
+    <a href="https://live.drmlive.in/jiotv/play.php?id=524&amp;e=">
+      <div class="card" data-title="Sony 3">
+        <img src="https://assets.airtel.in/static-assets/cms/dth/images/logo-adapt-pages/SONY%20SPORTS%20TEN%203.jpg" alt="Sony 3">
+        <span>Sony 3</span>
+      </div>
+    </a>
+  </div>
+
+  <script>
+    // Dark/Light toggle
+    const modeToggle = document.getElementById("modeToggle");
+    const modeIcon = document.getElementById("modeIcon");
+    const body = document.body;
+
+    // Check local storage
+    const savedMode = localStorage.getItem("mode");
+    if (savedMode === "light-mode") {
+      body.classList.remove("dark");
+      body.classList.add("light");
+      modeIcon.classList.replace("bx-moon", "bx-sun");
+    }
+
+    modeToggle.addEventListener("click", () => {
+      body.classList.toggle("dark");
+      body.classList.toggle("light");
+
+      if (body.classList.contains("light")) {
+        modeIcon.classList.replace("bx-moon", "bx-sun");
+        localStorage.setItem("mode", "light-mode");
+      } else {
+        modeIcon.classList.replace("bx-sun", "bx-moon");
+        localStorage.setItem("mode", "dark-mode");
+      }
+    });
+
+    // Scroll to top button
+    const upBtn = document.getElementById("scrollToTopBtn");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) upBtn.style.display = "block";
+      else upBtn.style.display = "none";
+    });
+    upBtn.addEventListener("click", () => window.scrollTo({top:0, behavior:'smooth'}));
+
+    // Search toggle
+    const searchContainer = document.getElementById('searchContainer');
+    const searchIcon = document.getElementById('searchIcon');
+    const searchInput = document.getElementById('searchInput');
+
+    searchIcon.addEventListener('click', () => {
+      searchContainer.classList.toggle('active');
+      if (searchContainer.classList.contains("active")) {
+        searchIcon.classList.replace("uil-search", "uil-times");
+        searchInput.focus();
+      } else {
+        searchIcon.classList.replace("uil-times", "uil-search");
+        searchInput.value = ""; 
+        document.querySelectorAll(".card").forEach(card => {
+          card.parentElement.style.display = "inline-block";
+        });
+      }
+    });
+
+    // Search functionality
+    searchInput.addEventListener('input', function() {
+      const filter = this.value.toLowerCase();
+      document.querySelectorAll('.scroll-section .card').forEach(card => {
+        const title = card.getAttribute('data-title').toLowerCase();
+        card.parentElement.style.display = title.includes(filter) ? 'inline-block' : 'none';
+      });
+    });
+  </script>
 
 </body>
 </html>
