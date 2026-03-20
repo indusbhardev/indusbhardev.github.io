@@ -2,7 +2,7 @@ const channels = [
   { 
     name: "STAR SPORTS 1 HINDI", 
     logo: "https://cdn.smartads.in/images/product/television/Star-Sports-1-Hindi-HD.png", 
-    url: "https://jiotvmblive.cdn.jio.com//bpk-tv/Star_Sports_1_Hindi_BTS/output/index.mpd", 
+    url: "https://jiotvmblive.cdn.jio.com/bpk-tv/Star_Sports_1_Hindi_BTS/output/index.mpd", 
     keyId: "8ea9b607549252068e260a5f4d7dd321", 
     key: "350c0aaffedf51cc1502e9543c7c885e", 
     cookie: "__hdnea__=st=1773982830~exp=1774069230~acl=/*~hmac=e136ac143222129f9f60d529297e000184ab5aa444e9d0a1329daa5aac8bad4d"
