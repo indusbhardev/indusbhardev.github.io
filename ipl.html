@@ -66,20 +66,6 @@
 </main>
 
 <style>
-  :root {
-    --bg-dark: #0b111b; /* Slightly darker to match image */
-    --card-bg: #1a2432;
-    --text-main: #ffffff;
-  }
-
-  body {
-    background-color: var(--bg-dark);
-    font-family: 'Segoe UI', sans-serif;
-    color: var(--text-main);
-    margin: 0;
-    padding: 20px;
-  }
-
   /* --- Horizontal Scroll Logic --- */
   .horizontal-scroll-wrapper {
     width: 100%;
@@ -105,8 +91,8 @@
   .grid-container {
     display: flex;
     flex-wrap: nowrap; /* Prevents items from jumping to next line */
-    gap: 15px;
-    padding-right: 20px; /* Padding at the end of the scroll */
+    gap: 10px;
+    padding-right: 10px; /* Padding at the end of the scroll */
   }
 
   /* --- Card Styling --- */
@@ -114,7 +100,7 @@
     flex: 0 0 auto; /* Essential: prevents cards from shrinking */
     background-color: white;
     border-radius: 12px;
-    width: 180px; /* Adjusted width */
+    width: 170px; /* Adjusted width */
     overflow: hidden;
     text-decoration: none;
     transition: transform 0.2s;
