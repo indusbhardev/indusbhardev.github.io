@@ -1,4 +1,37 @@
+/* 1. Custom Scrollbar behavior */
+.no-scrollbar::-webkit-scrollbar {
+    height: 6px;
+}
 
+.no-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.dark .no-scrollbar::-webkit-scrollbar-thumb {
+    background: #2d313f; /* Darker thumb in dark mode */
+    border-radius: 10px;
+}
+
+.no-scrollbar::-webkit-scrollbar-thumb {
+    background: #cbd5e1; /* Default grey thumb in light mode */
+    border-radius: 10px;
+}
+
+/* 2. Card Visual Styling (applied by class in JS) */
+.channel-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.channel-card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: #0ea5e9; /* Sky-500 hover border */
+}
+
+/* Dark mode transitions */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 .ipl {
     height: 210px;
 }
