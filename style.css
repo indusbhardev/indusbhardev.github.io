@@ -33,5 +33,5 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 .ipl {
-    height: 210px;
+    max-height: 210px;
 }
