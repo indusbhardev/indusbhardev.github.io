@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sports Streaming Interface</title>
-    <link rel="stylesheet" href="https://indusbhardev.github.io/style.css">
+    <link rel="stylesheet" href="/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -24,6 +24,27 @@
             }
         }
     </script>
+    <style>
+        /* Custom scrollbar for better visual integration */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        .dark ::webkit-scrollbar-track {
+            background: #10141e;
+        }
+        ::webkit-scrollbar-track {
+            background: #f0f2f5;
+        }
+        .dark ::webkit-scrollbar-thumb {
+            background: #2a2e3b;
+            border-radius: 4px;
+        }
+        ::webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 <body class="bg-brand-lightBg dark:bg-brand-darkBg text-black dark:text-white transition-colors duration-200 min-h-screen font-sans">
 
