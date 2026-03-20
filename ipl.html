@@ -42,30 +42,111 @@
 
 
 
+<main class="dashboard">
+  
+  <section class="channel-group">
+    <div class="section-header">
+      <h2>Sports 🏀</h2>
+    </div>
+    <div class="grid-container" id="star-sports-grid">
+      </div>
+  </section>
 
+  <section class="channel-group">
+    <div class="section-header">
+      <h2>More 🏀</h2>
+    </div>
+    <div class="grid-container" id="sony-sports-grid">
+      </div>
+  </section>
+  
+</main>
 
-    <main class="p-6 md:p-10 space-y-10">
+<style>
+  :root {
+    --bg-dark: #0f1724;
+    --card-bg: #1a2432;
+    --card-hover: #253347;
+    --text-main: #ffffff;
+    --accent-blue: #4dabf7;
+  }
 
-        <section>
-            <div class="flex items-center gap-2 mb-6">
-                <h2 class="text-2xl font-semibold">Sports</h2>
-                <span class="text-xl">🏀</span>
-            </div>
-            <div id="sportsGrid" class="flex flex-nowrap gap-6 overflow-x-auto pb-4 -mb-4">
-                </div>
-        </section>
+  body {
+    background-color: var(--bg-dark);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-main);
+    margin: 0;
+    padding: 20px;
+  }
 
-        <section>
-            <div class="flex items-center gap-2 mb-6">
-                <h2 class="text-2xl font-semibold">More</h2>
-                <span class="text-xl">🏀</span>
-            </div>
-            <div id="moreGrid" class="flex flex-nowrap gap-6 overflow-x-auto pb-4 -mb-4">
-                </div>
-        </section>
+  .dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
-    </main>
+  .channel-group {
+    margin-bottom: 40px;
+  }
 
+  .section-header h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  /* Individual Card Styling */
+  .channel-card {
+    background-color: white; /* Matches white top half in screenshot */
+    border-radius: 12px;
+    width: 160px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .channel-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .logo-container {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .logo-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .channel-info {
+    background-color: var(--card-bg); /* Dark bottom half */
+    padding: 12px;
+    text-align: center;
+  }
+
+  .channel-info span {
+    color: #cbd5e0;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+</style>
 
 
     
