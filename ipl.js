@@ -1,7 +1,7 @@
 const channels = [
   { 
     name: "STAR HINDI", 
-    logo: "https://example.com/starhindi.png", 
+    logo: "https://cdn.smartads.in/images/product/television/Star-Sports-1-Hindi-HD.png", 
     url: "https://example.com/starhindi.mp4", 
     keyId: "jhgd7676", 
     key: "jhgdfj8786", 
