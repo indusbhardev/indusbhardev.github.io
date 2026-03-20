@@ -2,3 +2,23 @@
 .ipl {
     height: 210px;
 }
+        /* Custom scrollbar for better visual integration */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        .dark ::webkit-scrollbar-track {
+            background: #10141e;
+        }
+        ::webkit-scrollbar-track {
+            background: #f0f2f5;
+        }
+        .dark ::webkit-scrollbar-thumb {
+            background: #2a2e3b;
+            border-radius: 4px;
+        }
+        ::webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border-radius: 4px;
+        }
+        
