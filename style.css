@@ -35,3 +35,75 @@ body {
 .ipl {
     max-height: 210px;
 }
+
+
+
+
+
+dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .channel-group {
+    margin-bottom: 40px;
+  }
+
+  .section-header h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  /* Individual Card Styling */
+  .channel-card {
+    background-color: white; /* Matches white top half in screenshot */
+    border-radius: 12px;
+    width: 160px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .channel-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .logo-container {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .logo-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .channel-info {
+    background-color: var(--card-bg); /* Dark bottom half */
+    padding: 12px;
+    text-align: center;
+  }
+
+  .channel-info span {
+    color: #cbd5e0;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
