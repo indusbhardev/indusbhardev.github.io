@@ -41,90 +41,95 @@
     </nav>
 
 
-
 <main class="dashboard">
   
   <section class="channel-group">
     <div class="section-header">
       <h2>Sports 🏀</h2>
     </div>
-    <div class="grid-container" id="star-sports-grid">
-      </div>
+    <div class="horizontal-scroll-wrapper">
+      <div class="grid-container" id="star-sports-grid">
+        </div>
+    </div>
   </section>
 
   <section class="channel-group">
     <div class="section-header">
       <h2>More 🏀</h2>
     </div>
-    <div class="grid-container" id="sony-sports-grid">
-      </div>
+    <div class="horizontal-scroll-wrapper">
+      <div class="grid-container" id="sony-sports-grid">
+        </div>
+    </div>
   </section>
   
 </main>
 
 <style>
   :root {
-    --bg-dark: #0f1724;
+    --bg-dark: #0b111b; /* Slightly darker to match image */
     --card-bg: #1a2432;
-    --card-hover: #253347;
     --text-main: #ffffff;
-    --accent-blue: #4dabf7;
   }
 
   body {
     background-color: var(--bg-dark);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     color: var(--text-main);
     margin: 0;
     padding: 20px;
   }
 
-  .dashboard {
-    max-width: 1200px;
-    margin: 0 auto;
+  /* --- Horizontal Scroll Logic --- */
+  .horizontal-scroll-wrapper {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scroll */
+    overflow-y: hidden;
+    padding-bottom: 15px; /* Space for scrollbar */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #4dabf7 transparent; /* Firefox */
   }
 
-  .channel-group {
-    margin-bottom: 40px;
+  /* Custom Scrollbar for Chrome/Safari/Edge */
+  .horizontal-scroll-wrapper::-webkit-scrollbar {
+    height: 6px;
   }
-
-  .section-header h2 {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  .horizontal-scroll-wrapper::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 10px;
+  }
+  .horizontal-scroll-wrapper::-webkit-scrollbar-track {
+    background: transparent;
   }
 
   .grid-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Prevents items from jumping to next line */
     gap: 15px;
+    padding-right: 20px; /* Padding at the end of the scroll */
   }
 
-  /* Individual Card Styling */
+  /* --- Card Styling --- */
   .channel-card {
-    background-color: white; /* Matches white top half in screenshot */
+    flex: 0 0 auto; /* Essential: prevents cards from shrinking */
+    background-color: white;
     border-radius: 12px;
-    width: 160px;
+    width: 180px; /* Adjusted width */
     overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.2s ease;
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
+    transition: transform 0.2s;
   }
 
   .channel-card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.03);
   }
 
   .logo-container {
-    height: 120px;
+    height: 110px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 15px;
   }
 
   .logo-container img {
@@ -134,20 +139,24 @@
   }
 
   .channel-info {
-    background-color: var(--card-bg); /* Dark bottom half */
+    background-color: #16202e;
     padding: 12px;
     text-align: center;
+    border-top: 1px solid #eeeeee10;
   }
 
   .channel-info span {
     color: #cbd5e0;
-    font-size: 0.75rem;
-    font-weight: bold;
+    font-size: 0.7rem;
+    font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 1px;
+  }
+
+  .section-header h2 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
   }
 </style>
-
 
     
 <script>
