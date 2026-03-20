@@ -9,7 +9,7 @@ const channels = [
   },
   {  
     name: "STAR ENGLISH", 
-    logo: "https://example.com/stareng.png", 
+    logo: "https://wpleague.in/wp-content/uploads/2026/01/Star-Sports-Network-5.jpeg", 
     url: "https://example.com/stareng.mp4", 
     keyId: "jhgd5f6", 
     key: "jhggh786", 
