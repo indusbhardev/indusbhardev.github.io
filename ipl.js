@@ -17,6 +17,7 @@ const channels = [
   }
 ];
 
+
 const grid = document.getElementById('star-sports-grid');
 
 channels.forEach(ch => {
