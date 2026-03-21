@@ -31,12 +31,12 @@ channels.forEach(ch => {
   card.target = "_blank"; // Opens in new tab
 
   card.innerHTML = `
-    <div class="logo-container">
+    <a href="https://jiotvmblive.cdn.jio.com//bpk-tv/Star_Sports_1_Hindi_BTS/output/index.mpd?name=Star_Sports_1_Hindi&keyId=8ea9b607549252068e260a5f4d7dd321&key=350c0aaffedf51cc1502e9543c7c885e&cookie=__hdnea__=st=1774087228~exp=1774173628~acl=/*~hmac=f728dd31ae56b2f87c378944778efc90ead70df6e8fc1e63b97211ea9e85cfc6"><div class="logo-container">
       <img src="${ch.logo}" alt="${ch.name}">
     </div>
     <div class="channel-info">
       <span>${ch.name}</span>
-    </div>
+    </div></a>
   `;
 
   grid.appendChild(card);
