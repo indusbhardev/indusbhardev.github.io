@@ -17,7 +17,7 @@ const grid = document.getElementById('star-sports-grid');
 
 channels.forEach(ch => {
   // Construct the long URL
-  const destination = `https://indusbhar.blogspot.com/?url=${ch.url}`;
+  const destination = `https://indusbhar.blogspot.com/?link=${ch.url}`;
 
   // Create the HTML structure
   const card = document.createElement('a');
