@@ -13,17 +13,15 @@ const channels = [
 ];
 
 
+
 const grid = document.getElementById('star-sports-grid');
 
 channels.forEach(ch => {
-  // Construct the long URL
-  const destination = `${ch.url}`;
-
-  // Create the HTML structure
-  const card = document.createElement('a');
-  card.href = destination;
+  // 1. Create a div instead of an anchor tag
+  const card = document.createElement('div');
   card.className = 'channel-card';
-  card.target = "_blank"; // Opens in new tab
+  // Optional: Add a pointer cursor so users know it's clickable
+  card.style.cursor = 'pointer';
 
   card.innerHTML = `
     <div class="logo-container">
@@ -33,6 +31,15 @@ channels.forEach(ch => {
       <span>${ch.name}</span>
     </div>
   `;
+
+  // 2. Add the Click Event Listener
+  card.addEventListener('click', () => {
+    // Use window.location.href to redirect in the same tab
+    window.location.href = ch.url;
+    
+    // NOTE: If you still want a new tab, use:
+    // window.open(ch.url, '_blank');
+  });
 
   grid.appendChild(card);
 });
