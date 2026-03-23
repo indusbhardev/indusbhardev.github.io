@@ -15,6 +15,9 @@ const channels = [
 
 
 const grid = document.getElementById('star-sports-grid');
+const themeToggle = document.getElementById('themeToggle');
+        const sunIcon = document.getElementById('sunIcon');
+        const moonIcon = document.getElementById('moonIcon');
 
 channels.forEach(ch => {
   // 1. Create a div instead of an anchor tag
