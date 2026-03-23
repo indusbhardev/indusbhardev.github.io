@@ -77,3 +77,6 @@ channels.forEach(ch => {
             sunIcon.classList.remove('hidden');
             moonIcon.classList.add('hidden');
         }
+
+
+themeToggle.addEventListener('click', toggleTheme);
