@@ -22,7 +22,7 @@ const themeToggle = document.getElementById('themeToggle');
 channels.forEach(ch => {
   // 1. Create a div instead of an anchor tag
   const card = document.createElement('div');
-  card.className = 'channel-card';
+  card.className = 'channel-card flex-none w-64 bg-brand-lightCard dark:bg-brand-darkCard rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer border border-gray-100 dark:border-gray-800';
   // Optional: Add a pointer cursor so users know it's clickable
   card.style.cursor = 'pointer';
 
