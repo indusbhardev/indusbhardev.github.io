@@ -9,6 +9,16 @@ const channels = [
     name: "STAR SPORTS 1 HINDI HD 720P, 1080P", 
     logo: "https://cdn.jsdelivr.net/gh/kratos877/picx-images-hosting@master/20231211/image-Content-60-j5fdr6a0-m1.4pi4jxp1lme0.webp", 
     url: "https://shorturl.at/hq02u"
+  },
+  { 
+    name: "STAR SPORTS 1 480P", 
+    logo: "https://static.wikia.nocookie.net/logopedia/images/e/e8/STAR_Sports_1_logo.png/revision/latest?cb=20150719162710", 
+    url: "https://shorturl.at/L6wei"
+  },
+  {
+    name: "STAR SPORTS 1 HD 720P, 1080P", 
+    logo: "https://static.wikia.nocookie.net/logopedia/images/c/cc/SS1HD.jpg/revision/latest?cb=20240313194654", 
+    url: "https://shorturl.at/Bw8UG"
   }
 ];
 
