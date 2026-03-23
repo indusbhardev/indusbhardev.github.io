@@ -2,7 +2,7 @@ const channels = [
   { 
     name: "STAR SPORTS 1 HINDI 480P", 
     logo: "https://skynet.in.net/stareegr/2019/12/Untitled-design-30__1547961984_114.29.227.0-1.jpg", 
-    url: "https://dash.vodep39240327.workers.dev/?url=https://jiotvmblive.cdn.jio.com//bpk-tv/Star_Sports_1_Hindi_BTS/output/index.mpd?name=Star_Sports_1_Hindi&keyId=8ea9b607549252068e260a5f4d7dd321&key=350c0aaffedf51cc1502e9543c7c885e&cookie=__hdnea__=st=1774087228~exp=1774173628~acl=/*~hmac=f728dd31ae56b2f87c378944778efc90ead70df6e8fc1e63b97211ea9e85cfc6" 
+    url: "https://shorturl.at/ZRf84" 
     
   },
   {  
