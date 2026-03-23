@@ -8,7 +8,7 @@ const channels = [
   {  
     name: "STAR SPORTS 1 HINDI HD 720P, 1080P", 
     logo: "https://cdn.jsdelivr.net/gh/kratos877/picx-images-hosting@master/20231211/image-Content-60-j5fdr6a0-m1.4pi4jxp1lme0.webp", 
-    url: "https://dash.vodep39240327.workers.dev/?url=https://jiotvmblive.cdn.jio.com//bpk-tv/Star_Sports_HD1_Hindi_BTS/output/index.mpd?name=Star_Sports_HD1_Hindi&keyId=400131994b445d8c8817202248760fda&key=2d56cb6f07a75b9aff165d534ae2bfc4&cookie=__hdnea__=st=1774108842~exp=1774195242~acl=/*~hmac=7d89a833c6261bebfe33598dc7c636cd4a316f855fac910c88eeb6ef56d36204"
+    url: "https://shorturl.at/hq02u"
   }
 ];
 
