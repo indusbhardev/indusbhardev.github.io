@@ -12,12 +12,12 @@ const channels = [
   },
   { 
     name: "STAR SPORTS 1 480P", 
-    logo: "https://static.wikia.nocookie.net/logopedia/images/e/e8/STAR_Sports_1_logo.png/revision/latest?cb=20150719162710", 
+    logo: "https://logodix.com/logo/947778.png", 
     url: "https://shorturl.at/L6wei"
   },
   {
     name: "STAR SPORTS 1 HD 720P, 1080P", 
-    logo: "https://static.wikia.nocookie.net/logopedia/images/c/cc/SS1HD.jpg/revision/latest?cb=20240313194654", 
+    logo: "https://upload.wikimedia.org/wikipedia/commons/7/73/Star_Sports_1_HD.png", 
     url: "https://shorturl.at/Bw8UG"
   }
 ];
