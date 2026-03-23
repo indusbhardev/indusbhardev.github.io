@@ -34,6 +34,7 @@ body {
 }
 .ipl {
     max-height: 210px;
+    width: 300px;
 }
 .ipl img {
     height: 100%;
